@@ -7,7 +7,7 @@ bot.help((ctx) => ctx.reply('chillet sticker bot --author NightCandle'))
 
 bot.on('inline_query',async(ctx) => {
 
-    if(ctx.inlineQuery.query.length ===0){
+    if(ctx.inlineQuery.query.length === 0){
         path = '/animation_gif/'
         Image_type = 'gif'
         Image_arc = 'gif'
