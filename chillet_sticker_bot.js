@@ -11,17 +11,17 @@ bot.on('inline_query',async(ctx) => {
         path = '/animation_gif/'
         Image_type = 'gif'
         Image_arc = 'gif'
-        num = 67
+        num = process.env.GIF_NUM
     }else if(ctx.inlineQuery.query === "gif"){
         path = '/animation_gif/'
         Image_type = 'gif'
         Image_arc = 'gif'
-        num = 67
+        num = process.env.GIF_NUM
     }else if(ctx.inlineQuery.query === "image"){
         path = '/png/'
         Image_type = 'photo'
         Image_arc = 'png'
-        num = 82
+        num = process.env.PNG_NUM
     }
 
     const offset = parseInt(ctx.inlineQuery.offset) || 0 
