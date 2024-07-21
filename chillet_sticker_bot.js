@@ -45,7 +45,7 @@ bot.on('inline_query',async(ctx) => {
             photo_url : item.url,
             thumbnail_url : item.thumbnail_url
         }))
-    }else {
+    }else{
         results = item.slice(offset, offset+10).map((item) => ({
             type : item.type,
             id : item.id,
